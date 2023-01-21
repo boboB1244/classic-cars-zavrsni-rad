@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #000000 0%, #777 50%, #000000 100%);                                       
+}
+header{
+    height: 8vh;
+}
+main{
+    height: 72vh;
+    overflow: auto;
+}
+footer{
+    height: 16vh;
+    font-size: 0.7rem;
+}
+footer p{
+    padding: 0.2rem 1rem;
+    position: absolute;
+    bottom: 0;
+}
+.container{
+    margin: 0 10%;
+}
+.my-form-control{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+ul{
+    list-style: none;
+}
+a, a:hover, a:visited, a:focus {
+    text-decoration: none !important;
+    color: white;
+    outline: none;
+}
+h2,h3{
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+nav{
+    padding: 0.5rem 1rem;
+}
+form{
+    margin: 1rem 0;
+}
+input,button{
+    height: 2rem;
+}
+button, label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+input, textarea, button{
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: white;
+}
+input[placeholder], textarea[placeholder]{
+    padding-left: 1rem;
+}
+fieldset{
+    padding: 0.3rem;
+    border-color: white;
+    border-width: 1px;
+}
+legend{
+    font-size: 1.2rem;
+    padding: 0 0.3rem;
+}
+nav, .logo-holder{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+nav ul li:hover{
+    background-color: white;
+    color: black;
+    transition: ease-in 0.5s;
+}
+form button:hover{
+    background-color: black;
+    color: white;
+    transition: ease-in 0.5s;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+#homePage{
+    background-image: url('../images/mercedes-300sl.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.about-us-img-holder{
+    background-image: url('../images/mustang.webp');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: 30px 0;
+    position: relative;
+}
+.about-us-img-holder p{
+    position: absolute;
+    top: 70%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: white;
+    color: black;
+    padding: 0.3rem;
+}
+.our-contact-wrapper{
+    margin: 1rem 0;
+}
+.our-contact-wrapper p{
+    display: flex;
+    font-weight: bold;
+}
+.our-contact-wrapper span{
+   padding-right: 0.3rem;
+}
+.display-none{
+    display: none;
+}
+.menu-holder{
+    position: absolute;
+    top: 8%;
+    right: 0;
+    text-align: left;
+    background: black;
+    padding: 0.4rem;
+    z-index: 1;
+}
+.home-wrapper{
+    position: absolute;
+    top: 17%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: white;
+    color: black;
+    font-size: 0.7rem;
+    border-radius: 10rem 10rem 0px 0px;
+    padding: 1.7rem;
+    text-align: center;
+    width: 90%;
+    height: 17%;
+}
+.soc-network{
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.soc-net-wrapper ul{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+.soc-net-wrapper img{
+    width: 1.8rem;
+    border-radius: 50%;
+    margin: 0 0.3rem;
+}
+
+@media all and (min-width: 768px) {
+.menu-holder{
+    display: block;
+    position: relative;
+    background-color: transparent;
+}
+.menu-holder ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.menu-holder ul li:not(:last-child){
+    border-right: 1px solid white;
+}
+.menu-holder ul li{
+    padding:0  0.5rem;
+    cursor: pointer;
+}
+#menuBtn{
+    display: none;
+}
+.logo{
+    font-size: 1.5rem;
+}
+#aboutUs .abouUS-wrapper{
+    display: flex;
+}
+.about-us-img-holder, .about-us-text-holder{
+    width: 50%;
+    margin: 0.7rem 0.4rem;
+}
+.about-us-img-holder{
+    margin: 30px 0;
+}
+.home-wrapper{
+    width: 45%;
+}
+.contact-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+}
+  
+  @media all and (min-width: 992px) {
+    .home-wrapper{
+        height: 18%;
+        top: 10%;
+    }
+  }
+
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 100,
+  'GRAD' -25,
+  'opsz' 20
+}
+
+/* Responsive image grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
